@@ -41,8 +41,10 @@ a {
 
     gap: 1em;
     min-width: 350px;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #191d2b;
+
+    color:aliceblue;
+   
 }
 
 .side-bar{
