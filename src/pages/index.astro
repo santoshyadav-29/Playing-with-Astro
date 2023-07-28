@@ -1,75 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playing</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="image">
-        <img
-          src="/profile.jpg"
-          alt=""
-        />
-      </div>
-      <h1 class="name">Santosh Yadav <b> &#10004;</b></h1>
+---
+import Home from "../components/home.astro";
+import Layout from "../layouts/Layout.astro";
+import About from "../components/about.astro";
 
-      <p class="about">
-        @santosh29 . Drinking coffee, watching netflix and making software .
-      </p>
-    </div>
-  </body>
-</html>
+// import Project from "../components/React/project.jsx";
+---
 
-<style>
-  /* boilerplate */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    height: 100vh;
-    background-color: grey;
-    color: white;
-  }
-
-  .wrapper {
-    background-color: rgb(18, 18, 18);
-    border-radius: 2%;
-    width: 50%;
-    margin: 2px auto;
-    padding: 2em;
-    display: grid;
-    gap: 1em;
-  }
-  img {
-    width:150px;
-	padding: 0.1em;
-	outline: solid white;
-	
-	border-radius: 50%;
-	
-	display: block;
-    
-  }
-  b {
-    
-    color: rgb(47, 47, 47);
-    padding: 0.2px 4px;
-    background-color: rgb(134, 8, 252);
-    border-radius: 100px;
-	/* outline: dotted 5px rgb(134, 8, 252); */
-  }
-  h1{
-	font-size: 1em;
-	
-  }
-  
-  
-</style>
+<Layout>
+  <Home />
+  <About />
+ 
+  <!-- <Project type="group"  client:visible /> -->
+</Layout>
