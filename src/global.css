@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("background.avif");
+    background: url("../public/background.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@ a {
 }
 
 .main-contents {
-   margin-top: 10%;
+    margin-top: 10%;
     font-family: 'Roboto', sans-serif;
     display: grid;
     min-height: 100vh;
@@ -43,20 +43,20 @@ a {
     min-width: 350px;
     background-color: #191d2b;
 
-    color:aliceblue;
-   
+    color: aliceblue;
+
 }
 
-.side-bar{
+.side-bar {
     /* fixed */
     position: fixed;
     top: 290px;
     right: 80px;
-   
-    
 
-    
-    
+
+
+
+
 }
 
 
