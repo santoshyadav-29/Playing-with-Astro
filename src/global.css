@@ -64,12 +64,19 @@ a {
 
 
 
-@media screen and (max-width: 768px) {
-    .wrapper {
+@media screen and (max-width: 900px) {
+
+    /* .wrapper {
         padding: 1rem 1rem 1rem 1rem;
+    } */
+    .main-contents {
+
+        grid-template-columns: 1fr;
     }
 
-    .side-bar {
-        display: none;
+    body {
+        background: #191d2b;
     }
+
+
 }
