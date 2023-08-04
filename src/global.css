@@ -51,10 +51,33 @@ a {
     gap: 1em;
     min-width: 350px;
     background-color: #191d2b;
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: white;
 
 }
+
+.active{
+    background: transparent;
+}
+
+/* .wrapper::before {
+    content: "";
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #191d2b;
+
+    width: 50%;
+    
+    height: 100%;
+    border-radius: 14px;
+    opacity: 0;
+    z-index: -1;
+  } */
+
+
 
 
 

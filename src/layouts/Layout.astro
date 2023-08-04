@@ -13,15 +13,52 @@ import "../global.css";
   </head>
   <body>
     <div class="layout">
+      <button class="transparent">Transparent</button>
       <div class="main-contents">
-        <div class="wrapper"><slot /></div>
+        <div class="wrapper "><slot /></div>
 
         
       </div>
     </div>
   </body>
+  <script>
+    const button = document.querySelector("button");
+    const wrapper = document.querySelector(".wrapper");
 
-  <style is:global>
+    
+
+    button.addEventListener("click", () => {
+      wrapper.classList.toggle("active");
+      if (wrapper.classList.contains("active")) {
+        button.textContent = "Regular";
+      } 
+        else{
+          button.textContent = "Transparent";
+        }
+      
+      
+
+      
+    });
+  </script>
+
+  <style >
+
+    button{
+      
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 40px;
+      z-index: 100;
+      padding: 0.6rem 1rem;
+      
+      
+    }
+
+
     
     
   </style>
