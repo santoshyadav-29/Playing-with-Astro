@@ -10,8 +10,8 @@
 }
 
 body {
-    /* background-image: url("../public/background.avif"); */
-    background-color:rgb(0, 204, 71);
+    background-image: url("../public/background.avif");
+    /* background-color:rgb(0, 204, 71); */
     /* background: url("https://images.pexels.com/photos/45911/peacock-plumage-bird-peafowl-45911.jpeg?auto=compress&cs=tinysrgb&w=600"); */
     background-size: cover;
     background-repeat: no-repeat;
