@@ -7,12 +7,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 body {
-    background-image: url("/background.avif");
+    /* background-image: url("../public/background.avif"); */
+    background-color:rgb(0, 204, 71);
     /* background: url("https://images.pexels.com/photos/45911/peacock-plumage-bird-peafowl-45911.jpeg?auto=compress&cs=tinysrgb&w=600"); */
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,6 +30,7 @@ a {
     text-decoration: none;
 
 }
+
 
 .main-contents {
     margin-top: 10%;
@@ -51,8 +51,7 @@ a {
     min-width: 350px;
     background-color: #191d2b;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-    color: aliceblue;
+    color: white;
 
 }
 
