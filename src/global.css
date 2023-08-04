@@ -11,7 +11,8 @@
 
 body {
     /* background-image: url("../public/background.avif"); */
-    background-image: url("/Space travel.gif");
+    background-image: url("/wp.gif");
+    scroll-behavior: smooth;
    
     background-size: cover;
     background-repeat: no-repeat;
