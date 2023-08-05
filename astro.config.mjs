@@ -9,4 +9,5 @@ export default defineConfig({
   output: "server",
   adapter: netlify(),
   site: 'https://S29antosh.github.io',
+  base: '/Playing with-Astro'
 });
