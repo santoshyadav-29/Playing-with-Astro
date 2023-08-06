@@ -19,7 +19,7 @@ import "../global.css";
     <div class="layout">
       <button class="transparent"
         ><span class="material-symbols-outlined"> visibility</span>
-        </button>
+      </button>
       <div class="main-contents">
         <div class="wrapper"><slot /></div>
       </div>
@@ -47,7 +47,7 @@ import "../global.css";
       animation: fadeIn 1s ease-in-out infinite alternate;
     }
 
-    button span{
+    button span {
       /* center */
       display: flex;
       align-items: center;
@@ -55,11 +55,9 @@ import "../global.css";
 
       /* size */
       width: 1.6rem;
-      
-
     }
     button:hover {
-      background-color:white ;
+      background-color: white;
       opacity: 0.5;
       color: black;
       cursor: pointer;
@@ -76,8 +74,7 @@ import "../global.css";
 
     @media (max-width: 768px) {
       button {
-        top: 1rem;
-        right: 1rem;
+        display: none;
       }
     }
   </style>
