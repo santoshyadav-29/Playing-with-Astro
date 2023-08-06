@@ -8,16 +8,20 @@ import "../global.css";
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
 
     <title>Portfolio</title>
   </head>
   <body>
     <div class="layout">
-      <button class="transparent">Transparent</button>
+      <button class="transparent"
+        ><span class="material-symbols-outlined"> visibility</span>
+        </button>
       <div class="main-contents">
-        <div class="wrapper "><slot /></div>
-
-        
+        <div class="wrapper"><slot /></div>
       </div>
     </div>
   </body>
@@ -25,41 +29,49 @@ import "../global.css";
     const button = document.querySelector("button");
     const wrapper = document.querySelector(".wrapper");
 
-    
-
     button.addEventListener("click", () => {
       wrapper.classList.toggle("active");
-      if (wrapper.classList.contains("active")) {
-        button.textContent = "Regular";
-      } 
-        else{
-          button.textContent = "Transparent";
-        }
-      
-      
-
-      
     });
   </script>
 
-  <style >
-
-    button{
-      
-      border: none;
-      outline: none;
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      left: 40px;
-      z-index: 100;
-      padding: 0.6rem 1rem;
-      
-      
+  <style>
+    button {
+      outline: solid 1px white;
+      border-radius: 50%;
+      position: fixed;
+      top: 3rem;
+      right: 3rem;
+      padding: 0.5rem 0.5rem;
+      background-color: transparent;
+      color: white;
+      animation: fadeIn 1s ease-in-out infinite alternate;
     }
 
+    button span{
+      /* center */
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    
-    
+      /* size */
+      width: 1.6rem;
+      
+
+    }
+    button:hover {
+      background-color:white ;
+      opacity: 0.5;
+      color: black;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0.3;
+      }
+      100% {
+        opacity: 0.6;
+      }
+    }
   </style>
 </html>
