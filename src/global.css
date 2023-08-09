@@ -12,6 +12,7 @@
 body {
     /* background-image: url("../public/background.avif"); */
     background-image: url("/wp.gif");
+    background-color: #191d2b;
     scroll-behavior: smooth;
    
     background-size: cover;
